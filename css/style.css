@@ -1,0 +1,365 @@
+/* Déclaration initiale box-sizing */
+
+.box {
+   box-sizing: border-box; /* Opera/IE 8+ */
+   -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+   -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+/* box-sizing est appliqué seulement à cette classe */
+} 
+
+* {
+ box-sizing: border-box; /* Opera/IE 8+ */
+ -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+ -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+/* box-sizing est appliqué à tous les éléments */
+}
+
+/*----------------------------------*/
+
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+}
+
+header nav ul li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 500;
+    padding: 0 15px;
+    margin: 0 15px;
+}
+
+header nav ul li:hover {
+    color: #0065fc;
+    border-top: solid;
+    border-color: #0065fc;
+}
+
+/* Body */
+
+main {
+    margin: 0 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+h1{
+    font-size: 25px;
+}
+
+h2 {
+    margin: 0 0 20px 0;
+}
+
+h3 {
+    margin: 0;
+    font-size: large;
+}
+
+h4 {
+    margin: 0;
+    padding: 0 0 15px 0;
+}
+
+form {
+    display: flex;
+}
+
+form label {
+    display: flex;
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-radius: 10px 0 0 10px;
+}
+
+form input {
+    border-style: solid;
+    border-color: #f2f2f2;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 0 0 15px;
+    color: black;
+    font-weight: bold;
+}
+
+form button {
+    display: flex;
+    padding: 15px;
+    background-color: #0065fc;
+    border-radius: 0 15px 15px 0;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+}
+
+#find-location ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    font-weight: bold;
+}
+
+#find-location p {
+    padding: 0 15px 0 0;
+}
+
+#find-location ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-color: #f2f2f2;
+    border-left: 0;
+    border-radius: 30px;
+    padding: 0 20px 0 0;
+    margin: 0 15px 0 0;
+}
+
+#find-location ul li i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    margin: 0 15px 0 0;
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 30px;
+}
+
+#city-info {
+    display: flex;
+    align-items: center;
+}
+
+#city-info i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    margin: 0 15px 0 0;
+    color: #0065fc;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: #f2f2f2;
+}
+
+/* Section host-popularity */
+
+#host-popularity {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#host, #popularity {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#row-1, #row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.up-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ /* Card */ 
+
+.card-up {
+    width: 250px; /*1 On définit une taille fixe à notre carte. */
+    /* margin: 0px auto; /*2 On le centre avec la méthode margin: 0px auto, attention à bien être en display: block. */
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.card-left {
+    width: 400px; /*1 On définit une taille fixe à notre carte. */
+    /* margin: 0px auto; /*2 On le centre avec la méthode margin: 0px auto, attention à bien être en display: block. */
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.card-up a {
+    color: black; 
+    text-decoration: none;
+}
+
+.card-left a {
+    display: flex;
+    flex-direction: row;
+    color: black; 
+    text-decoration: none;
+}
+
+.card-up:hover .card-up-image, .card-left:hover .card-left-image img {
+    border-radius: 15px;
+    transition-duration: 0.5s;
+}
+
+.card-up-image {
+    height: 110px;
+    position: relative;/*2 On fixe la position de notre élément en relative car il va contenir des éléments absolute à l’intérieur de lui. */
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    transition-duration: 0.5s;
+    margin: 0 0 5px 0;
+}
+
+/* .card-left-image {
+    width: 130px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 0 0 15px;
+    transition-duration: 0.5s;
+} */
+
+.card-left-image {
+    height: 130px;
+    width: 130px;
+    transition-duration: 0.5s;
+}
+
+.card-up-image img {
+    width: 100%;
+      /*5 - Méthode de centrage en fonction de la taille de l'image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-property: filter width; 
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+/* .card-left-image img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-property: filter width; 
+    transition-duration: .3s;
+    transition-timing-function: ease;
+} */
+
+.card-left-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+    transition-property: filter width;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 0 0 10px;
+}
+
+.card-body p {
+    margin: 5px 0;
+    font-size: medium;
+}
+
+
+
+.price {
+    margin: 0;
+    padding: 0 0 0 5px;
+    font-size: medium;
+}
+
+#rating {
+    padding: 0 0 0 5px;
+}
+
+.full {
+    color: #0065fc;
+}
+
+.empty {
+    color: #f2f2f2;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    gap: 20%;
+    background-color: #f2f2f2;
+    padding: 40px;
+    margin: 10px 0 0 0;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text p {
+    margin: 0;
+    padding: 5px 0;
+    font-size: medium;
+}
+
+
+
+
+/* Pour les tablettes */
+@media (max-width: 992px) and (min-width: 768px) {
+    
+}
+
+/* Pour les mobiles */
+@media (max-width: 768px) {
+
+}
