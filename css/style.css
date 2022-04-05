@@ -193,6 +193,12 @@ form button {
     gap: 30px;
 }
 
+.carousel-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 #row-1, #row-2 {
     display: flex;
     flex-wrap: wrap;
@@ -223,6 +229,41 @@ form button {
     box-shadow: 0px 5px 20px #999;
     padding: 5px;
     border-radius: 20px;
+}
+
+.card-huge, .card-big, .card-medium, .card-small {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    box-shadow: 0px 5px 20px #999;
+    border-radius: 20px;
+}
+
+.card-huge {
+    height: 100%;
+}
+
+.card-big {
+    height: 55%;
+}
+
+.card-medium {
+    height: 45%;
+}
+
+.card-small {
+    height: 35%;
+}
+
+.card-huge img, .card-big img, .card-medium img, .card-small img {
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-huge h3, .card-big h3, .card-medium h3, .card-small h3 {
+    padding: 10px;
 }
 
 .card-up a {
@@ -310,8 +351,6 @@ form button {
     font-size: medium;
 }
 
-
-
 .price {
     margin: 0;
     padding: 0 0 0 5px;
@@ -328,6 +367,18 @@ form button {
 
 .empty {
     color: #f2f2f2;
+}
+
+#activity {
+    margin: 50px 0;
+}
+
+#masonry {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 400px;
 }
 
 /* Footer */
