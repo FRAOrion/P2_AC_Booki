@@ -45,15 +45,19 @@ header nav ul {
 header nav ul li {
     display: flex;
     align-items: center;
+    font-size: 20px;
     height: 100%;
     padding: 0 15px;
     margin: 0 15px;
 }
 
 header nav ul li:hover {
-    color: #0065fc;
     border-top: solid;
     border-color: #0065fc;
+}
+
+header nav ul li a:hover {
+    color: #0065fc;
 }
 
 /* Body */
@@ -64,6 +68,11 @@ main {
 
 p {
     font-size: 20px;
+}
+
+a {
+    color: black; 
+    text-decoration: none;
 }
 
 h1{
@@ -253,8 +262,6 @@ form button {
     padding: 5px;
     border-radius: 20px;
     box-shadow: 0px 5px 20px #999;
-    color: black; 
-    text-decoration: none;
 }
 
 .card-up img {
@@ -263,12 +270,9 @@ form button {
     overflow: hidden;
     border-radius: 15px 15px 0 0;
     transition-duration: 0.5s;
-<<<<<<< HEAD
     -o-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
-=======
->>>>>>> main
 }
 
 .card-up a h3, .card-up a p, .card-up a div {
@@ -293,8 +297,6 @@ form button {
     padding: 5px;
     border-radius: 20px;
     box-shadow: 0px 5px 20px #999;
-    color: black; 
-    text-decoration: none;
 }
 
 .card-left img {
@@ -303,20 +305,13 @@ form button {
     overflow: hidden;
     border-radius: 15px 0 0 15px;
     transition-duration: 0.5s;
-<<<<<<< HEAD
     -o-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
-=======
->>>>>>> main
 }
 
 .card-up:hover img, .card-left:hover img {
     border-radius: 15px;
-<<<<<<< HEAD
-=======
-    transition-duration: 0.5s;
->>>>>>> main
 }
 
 .card-body {
