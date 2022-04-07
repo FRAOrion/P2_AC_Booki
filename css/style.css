@@ -119,6 +119,7 @@ form button {
 #find-location ul {
     display: flex;
     flex-wrap: wrap;
+    gap: 15px;
     list-style: none;
     padding: 0;
     font-weight: bold;
@@ -130,14 +131,16 @@ form button {
 
 #find-location ul li {
     display: flex;
-    justify-content: center;
     align-items: center;
     border: 2px solid;
-    border-color: #f2f2f2;
+    border-color: #d9d9d9;
     border-left: 0;
     border-radius: 30px;
     padding: 0 20px 0 0;
-    margin: 0 15px 0 0;
+    transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
 }
 
 #find-location ul li i {
@@ -150,6 +153,10 @@ form button {
     color: #0065fc;
     background-color: #deebff;
     border-radius: 30px;
+}
+
+#find-location ul li:hover {
+    background-color: #deebff;
 }
 
 #city-info {
@@ -247,6 +254,9 @@ form button {
     overflow: hidden;
     border-radius: 15px 15px 0 0;
     transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
 }
 
 .card-up a h3, .card-up a p, .card-up a div {
@@ -281,11 +291,13 @@ form button {
     overflow: hidden;
     border-radius: 15px 0 0 15px;
     transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
 }
 
 .card-up:hover img, .card-left:hover img {
     border-radius: 15px;
-    transition-duration: 0.5s;
 }
 
 .card-body {
