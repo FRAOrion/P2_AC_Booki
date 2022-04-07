@@ -263,9 +263,12 @@ form button {
     overflow: hidden;
     border-radius: 15px 15px 0 0;
     transition-duration: 0.5s;
+<<<<<<< HEAD
     -o-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
+=======
+>>>>>>> main
 }
 
 .card-up a h3, .card-up a p, .card-up a div {
@@ -300,13 +303,20 @@ form button {
     overflow: hidden;
     border-radius: 15px 0 0 15px;
     transition-duration: 0.5s;
+<<<<<<< HEAD
     -o-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
+=======
+>>>>>>> main
 }
 
 .card-up:hover img, .card-left:hover img {
     border-radius: 15px;
+<<<<<<< HEAD
+=======
+    transition-duration: 0.5s;
+>>>>>>> main
 }
 
 .card-body {
