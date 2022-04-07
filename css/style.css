@@ -46,7 +46,6 @@ header nav ul li {
     display: flex;
     align-items: center;
     height: 100%;
-    font-size: 500;
     padding: 0 15px;
     margin: 0 15px;
 }
@@ -157,6 +156,16 @@ form button {
 
 #find-location ul li:hover {
     background-color: #deebff;
+}
+
+#find-location ul .li-nostyle {
+    font-size: 20px;
+    font-weight: bold;
+    border-style: none;
+}
+
+#find-location ul .li-nostyle:hover {
+    background-color: white;
 }
 
 #city-info {
