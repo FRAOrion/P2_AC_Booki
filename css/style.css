@@ -231,9 +231,10 @@ form button {
     width: 65%;
 }
 
-#host > p {
+#host > a {
     margin: 110px 0 0 0;
     font-weight: bold;
+    font-size: larger;
 }
 
 #popularity {
@@ -449,7 +450,7 @@ footer {
         background-color: white;
     }
 
-    #host > p {
+    #host > a {
         margin: 60px 0 0 0;
     }
 
@@ -601,7 +602,7 @@ footer {
         background-color: white;
     }
 
-    #host > p {
+    #host > a {
         margin: 60px 0 0 0;
     }
 
