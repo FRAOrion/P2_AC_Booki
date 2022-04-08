@@ -229,7 +229,7 @@ form button {
 }
 
 #host > p {
-    margin: 60px 0 0 0;
+    margin: 110px 0 0 0;
     font-weight: bold;
 }
 
@@ -247,8 +247,9 @@ form button {
 .carousel-row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: space-between;
+    /* justify-content: space-between;
+    align-content: space-between; */
+    gap: 5%;
 }
 
 .carousel-column {
@@ -262,7 +263,7 @@ form button {
 
 .card-up {
      width: 30%;
-     height: 30%;
+     height: 225px;
 }
 
 .card-up a {
@@ -445,6 +446,10 @@ footer {
         background-color: white;
     }
 
+    #host > p {
+        margin: 60px 0 0 0;
+    }
+
     .carousel-row {
         gap: 30px;
     }
@@ -575,6 +580,10 @@ footer {
 
     #host {
         background-color: white;
+    }
+
+    #host > p {
+        margin: 60px 0 0 0;
     }
 
     .carousel-row {
