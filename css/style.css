@@ -154,9 +154,8 @@ form button {
     align-items: center;
     border: 2px solid;
     border-color: #d9d9d9;
-    border-left: 0;
     border-radius: 30px;
-    padding: 0 20px 0 0;
+    padding: 19px 19px 19px 65px;
     transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
@@ -167,19 +166,23 @@ form button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
-    width: 60px;
+    position: absolute;
+    transform: translateX(-68px);
+    height: 61px;
+    width: 61px;
     margin: 0 15px 0 0;
     color: #0065fc;
     background-color: #deebff;
     border-radius: 30px;
+    transition-duration: 0.5s;
 }
 
-#find-location ul li:hover {
-    background-color: #deebff;
+#find-location ul li:hover i {
+  transform: rotate(180deg) translateX(68px);
 }
 
 #find-location ul .li-nostyle {
+    padding: 19px;
     font-size: 20px;
     font-weight: bold;
     border-style: none;
@@ -247,8 +250,8 @@ form button {
 .carousel-row {
     display: flex;
     flex-flow: row wrap;
-    /* justify-content: space-between;
-    align-content: space-between; */
+    justify-content: space-between;
+    /* align-content: space-between; */
     gap: 5%;
 }
 
@@ -475,6 +478,18 @@ footer {
         margin: 15px 30px 30px 30px;
     }
 
+    #masonry {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 30px;
+        height: auto;
+    }
+
+    .card-huge, .card-big, .card-medium, .card-small {
+        width: 100%;
+        height: 200px;
+    }
+
     footer {
         gap: 13%;
     }
@@ -526,8 +541,8 @@ footer {
     }
 
     #find-location ul li i {
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 60px;
         font-size: 1.25em;
     }
 
@@ -546,7 +561,7 @@ footer {
     }
 
     form input {
-        width: 100%;
+        width: 80%;
     }
     
     form button {
@@ -564,6 +579,10 @@ footer {
 
     .mobile-button {
         display: block;
+        position: absolute;
+        height: 63px;
+        width: 63px;
+        transform: translateX(287px);
     }
     
     #host-popularity {
