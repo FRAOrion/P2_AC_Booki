@@ -33,14 +33,9 @@ header img {
     padding: 20px 0;
 }
 
-header nav {
-    display: flex;
-    align-items: center;
-}
-
 header nav ul {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     height: 100%;
     list-style: none;
     padding: 0 20px;
@@ -98,6 +93,10 @@ h4 {
     padding: 0 0 15px 0;
 }
 
+/* Find-location */
+
+/* Form */
+
 form {
     display: flex;
 }
@@ -105,7 +104,7 @@ form {
 form label {
     padding: 15px;
     background-color: #f2f2f2;
-    border-radius: 10px 0 0 10px;
+    border-radius: 15px 0 0 15px;
 }
 
 form input {
@@ -138,6 +137,7 @@ form button {
 
 #find-location ul {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
     list-style: none;
@@ -152,6 +152,7 @@ form button {
 #find-location ul li {
     display: flex;
     align-items: center;
+    font-size: large;
     border: 2px solid;
     border-color: #d9d9d9;
     border-radius: 30px;
@@ -160,6 +161,10 @@ form button {
     -o-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
+}
+
+#find-location ul li p {
+    padding: 0;
 }
 
 #find-location ul li i {
@@ -173,7 +178,7 @@ form button {
     margin: 0 15px 0 0;
     color: #0065fc;
     background-color: #deebff;
-    border-radius: 30px;
+    border-radius: 100%;
     transition-duration: 0.5s;
 }
 
@@ -183,8 +188,7 @@ form button {
 
 #find-location ul .li-nostyle {
     padding: 19px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: larger;
     border-style: none;
 }
 
@@ -520,8 +524,10 @@ footer {
     }
 
     header nav ul li {
+        width: 100%;
+        justify-content: center;
         margin: 0;
-        padding: 15px 43px;
+        padding: 15px 0;
         border-bottom: #f2f2f2 solid 3px;
     }
 
@@ -535,16 +541,26 @@ footer {
 
     #find-location ul {
         padding: 15px 0;
+        gap: 13px;
     }
 
     #find-location ul .li-nostyle {
         padding: 0 150px 0 0;
     }
 
+    #find-location ul li {
+        padding: 15px 12px 15px 58px;
+    }
+
     #find-location ul li i {
-        height: 60px;
-        width: 60px;
-        font-size: 1.25em;
+        height: 54px;
+        width: 54px;
+        font-size: 1.1em;
+        transform: translateX(-61px);
+    }
+
+    #find-location ul li:hover i {
+        transform: rotate(180deg) translateX(61px);
     }
 
     #find-location {
@@ -559,15 +575,16 @@ footer {
     form label  {
         padding: 20px;
         font-size: 1.25em;
+        border-radius: 20px 0 0 20px;
     }
 
     form input {
-        width: 80%;
+        width: 75%;
     }
     
     form button {
         padding: 20px;
-        border-radius: 15px;
+        border-radius: 20px;
     }
 
     #city-info i {
@@ -583,7 +600,7 @@ footer {
         position: absolute;
         height: 63px;
         width: 63px;
-        transform: translateX(287px);
+        right: 20px;
     }
     
     #host-popularity {
@@ -612,7 +629,6 @@ footer {
     
     .card-up {
         width: 100%;
-        /* width: 300px; */
         height: 225px;
     }
 
