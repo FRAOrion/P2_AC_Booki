@@ -256,8 +256,7 @@ form button {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    /* align-content: space-between; */
-    gap: 5%;
+    row-gap: 10%;
 }
 
 .carousel-column {
@@ -427,7 +426,7 @@ footer {
     flex-direction: column;
 }
 
-.footer-text p {
+.footer-text a {
     margin: 0;
     padding: 5px 0;
     font-size: medium;
