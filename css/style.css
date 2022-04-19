@@ -81,6 +81,7 @@ h1{
 
 h2 {
     margin: 0 0 20px 0;
+    font-size: 20px;
 }
 
 h3 {
@@ -206,9 +207,8 @@ form button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
-    width: 30px;
     margin: 0 15px 0 0;
+    padding: 13px 10px;
     color: #0065fc;
     border: 2px solid;
     border-radius: 20px;
@@ -282,6 +282,10 @@ form button {
     padding: 5px;
     border-radius: 20px;
     box-shadow: 0px 5px 20px #999;
+}
+
+.card-up a *, .card-body *{
+    font-size: 12px;
 }
 
 .card-up img {
@@ -376,7 +380,13 @@ form button {
     height: 400px;
 }
 
-.card-huge, .card-big, .card-medium, .card-small {
+#masonry a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-huge , .card-big , .card-medium , .card-small {
     display: flex;
     flex-direction: column;
     width: 23%;
@@ -400,14 +410,14 @@ form button {
     height: 35%;
 }
 
-.card-huge img, .card-big img, .card-medium img, .card-small img {
+.card-huge a img, .card-big a img, .card-medium a img, .card-small a img {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
 }
 
-.card-huge h3, .card-big h3, .card-medium h3, .card-small h3 {
+.card-huge a h3, .card-big a h3, .card-medium a h3, .card-small a h3 {
     padding: 10px;
 }
 
@@ -424,6 +434,12 @@ footer {
 .footer-text {
     display: flex;
     flex-direction: column;
+}
+
+.footer-text p {
+    margin: 0 0 15px 0;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .footer-text a {
@@ -470,6 +486,10 @@ footer {
         width: 40%;
     }
 
+    .card-body * , .card-up a * {
+        font-size: large;
+    }
+
     .card-body p {
         font-size: 18px;
     }
@@ -503,6 +523,10 @@ footer {
 @media screen and (max-width: 767px) {
     h1 {
         font-size: 23px;
+    }
+
+    h2 {
+        font-size: large;
     }
     
     main {
@@ -544,7 +568,7 @@ footer {
     }
 
     #find-location ul .li-nostyle {
-        padding: 0 150px 0 0;
+        width: 100%;
     }
 
     #find-location ul li {
@@ -571,23 +595,27 @@ footer {
         padding: 0 0 15px 0;
     }
 
+    form {
+        justify-content: center;
+    }
+
     form label  {
         padding: 20px;
         font-size: 1.25em;
         border-radius: 20px 0 0 20px;
+        position: absolute;
+        left: 3%;
     }
 
     form input {
-        width: 75%;
+        height: 63px;
+        width: 90%;
+        padding: 0 0 0 40px;
     }
     
     form button {
         padding: 20px;
         border-radius: 20px;
-    }
-
-    #city-info i {
-        width: 45px;
     }
 
     .desktop-button {
@@ -599,7 +627,7 @@ footer {
         position: absolute;
         height: 63px;
         width: 63px;
-        right: 20px;
+        right: 3%;
     }
     
     #host-popularity {
@@ -635,11 +663,7 @@ footer {
         width: 40%;
     }
 
-    .card-body p {
-        font-size: 18px;
-    }
-
-    .card-rating {
+    .card-up a * , .card-body * {
         font-size: 14px;
     }
 
